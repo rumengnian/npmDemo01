@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script>
+    $(function(){
+        alert("hello npm！")
+    })
+    </script>
+     <!-- 设置淘宝镜像 -->
+     <div>npm config set registry http://registry.npm.taobao.org</div>
+    
+     <!-- 初始化npm -->
+    <h3>1.npm  init -y</h3>
+    <!-- 下载jquery库 -->
+    <h3>2.npm i jquery </h3>
+    <!-- 删除依赖 -->
+    <h3>2.npm uninstall jquery </h3>
+    <!-- 更新依赖  -->
+    <h3>2.npm update vue </h3>
+    <!-- 安装指定版本依赖  -->
+    <h3>2.npm i jquery @3.0.0 </h3>
+    <div id="app">
+        {{ message }}
+      </div>
+      
+      <script>
+      var app = new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello Vue!'
+        }
+      })
+    </script>
+
+</body>
+</html>
